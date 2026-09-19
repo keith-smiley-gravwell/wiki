@@ -38,7 +38,8 @@ Each `[Jamf "name"]` stanza configures an independent polling connection to the 
 | Client-Secret | string | yes |     | OAuth 2.0 client secret from your Jamf Pro API 2.0 integration. |
 | Host | URL | yes |     | The Jamf Pro API base URL. |
 | Lookback | integer | no  | 1 (hours) | How far back in time to fetch events on first run in hours. |
-| Tag-Name | string | no  | jamf | Tag to assign ingested entries. Only valid when a single `API` is configured. |
+| Tag-Name | string | no  | jamf | Forces ALL entries to a single tag. Cannot be used with `Tag-Prefix`. | 
+| Tag-Prefix | string | no | jamf | Prefix for auto-generated tag names. Tags will be `<prefix>-<section>`. Cannot be used with `Tag-Name`. | 
 | Page-Size | integer | no | 100 | Maximum number of objects per page. |
 | Requests-Per-Minute | integer | no  | 5   | Maximum number of API requests per minute. |
 | Request-Interval | integer (seconds) | no  | 300 (seconds) | How often to poll the API for new events in seconds. |
