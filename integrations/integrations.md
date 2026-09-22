@@ -32,6 +32,7 @@ Fortinet <network/fortinet>
 GitHub <application/github>
 IPFIX <network/ipfix>
 IPMI <generic/ipmi>
+Jamf <host/jamf>
 Juniper <network/juniper>
 MongoDB <application/mongodb>
 Netflow <network/netflow>
@@ -124,6 +125,12 @@ Zeek <network/zeek>
 :link: network/ipfix
 :link-type: doc
 **IPFIX**
+:::
+
+:::{grid-item-card}
+:link: network/juniper
+:link-type: doc
+**Jamf**
 :::
 
 :::{grid-item-card}
