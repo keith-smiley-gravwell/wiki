@@ -130,12 +130,6 @@ Zeek <network/zeek>
 :::{grid-item-card}
 :link: network/juniper
 :link-type: doc
-**Jamf**
-:::
-
-:::{grid-item-card}
-:link: network/juniper
-:link-type: doc
 **Juniper** 
 :::
 
@@ -201,11 +195,19 @@ Zeek <network/zeek>
 :::
 
 :::{grid-item-card}
+:link: host/jamf
+:link-type: doc
+**Jamf**
+:::
+
+:::{grid-item-card}
 :link: host/sysmon
 :link-type: doc
 **Sysmon**
 :::
+::::
 
+::::{grid} 4
 :::{grid-item-card}
 :link: host/windowsevent
 :link-type: doc
