@@ -24,7 +24,7 @@ See the [Jamf documentation](https://learn.jamf.com/r/en-US/jamf-pro-documentati
 
 #### Creating a Jamf API Role
 
-Start by creating a dedicated API role scoped only to what the ingester needs (something like "Gravwell Ingest Read Only"). The Jamf ingester reads from the computer-inventory endpoint, so the role only needs read privileges for the inventory categories you plan to collect (e.g. General, Hardware, Operating System, and any additional [Sections](jamf_available_sections) you enable).
+Start by creating a dedicated API role scoped only to what the ingester needs (something like "Gravwell Ingest Read Only"). The Jamf ingester reads from the computer-inventory endpoint, so the role only needs read privileges for the inventory categories you plan to collect (e.g. General, Hardware, Operating System, and any additional [Sections](https://docs.gravwell.io/ingesters/jamf.html#available-sections) you enable).
 
 ```{attention}
 Do not assign write, update, or delete privileges to the API role used by the ingester. This gives significantly more access than is needed for read-only log collection.
